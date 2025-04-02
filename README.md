@@ -13,3 +13,23 @@ This project allows you to convert Ruby source files (.rb) into bytecode files (
 - Ruby 2.6 or higher
 
 - Ruby's RubyVM::InstructionSequence for bytecode compilation and execution
+
+## Usage
+
+- To convert a .rb file into a .bin bytecode file:
+
+```bash
+ruby converter.rb path/to/your_script.rb  
+```
+
+- To execute the bytecode from a .bin file:
+
+```bash
+ruby loader.rb path/to/your_script.bin
+```
+
+- To view the disassembled bytecode from a .bin file:
+
+```bash
+ruby disassemble.rb path/to/your_script.bin
+```
